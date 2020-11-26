@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+				<link type="text/css" rel="stylesheet" href="./style/style.css">
+				<script src="./js/script.js"></script>
+		</head>
+		<body>
+			<header>
+					<nav>
+						<ul>
+							<li id="title">truYum</li></li>
+							<li><img src="./images/logo.png"></li>
+							<li><a class="a1" href="menu-item-list-admin.html">Menu</a></li>
+							<li><a class="a2"></a></li>
+						</ul>
+					</nav>
+			</header>
+            <form id="myForm" action="edit-menu-item-status.html" onsubmit="return validate()" method="post">
+				<table id="t7">
+						<caption>
+							<h1>Edit Menu Item</h1>
+						<caption>
+
+						<tr>
+							<td id="bold"><label for="iname">Name</label></td>
+						<tr>
+						<tr>
+							<td colspan="4"><input type="text" id="iname" size="133" name="name"></td>
+						</tr>
+						<tr><td><br></td></tr>
+						<tr>
+							<td id="bold"><label for="iprice">Price (Rs.)</label></td>
+							<td id="bold"><label for="iactive">Active</label></td>
+							<td id="bold"><label for="idate-of-launch">Date of Launch</label></td>
+							<td id="bold"><label for="icategory">Category</label></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="price" id="iprice"></td>
+							<td>
+								<input type="radio" id="iyes" name="active" value="yes">
+								<label for="iyes">Yes</label>
+								<input type="radio" id="ino" name="active" value="no">
+								<label for="ino">No</label>
+							</td>
+							<td>
+								<input type="date" id="idate-of-launch" name="date-of-launch">
+							</td>
+							<td>
+								<input list="icategory">
+								<datalist name="category" id="icategory">
+									<option id="d1" value="Starters">Starters</option>
+									<option id="d2" value="Main Course">Main Course</option>
+									<option id="d3" value="Dessert">Dessert</option>
+									<option id="d4" value="Drinks">Drinks</option>
+								</datalist>
+							</td>
+						</tr>
+						<tr><td><br></td></tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="ifree-delivery" name="free-delivery" value="free-delivery">
+								<label id="bold" for="ifree-delivery">Free Delivery</label>
+							</td>
+						</tr>
+						<tr><td><br></td></tr>
+						<tr>
+							<td><input type="submit" id="submit" class="button" value="Save" name="submit"></td>
+						</tr>
+
+				</table>
+			</form>
+			
+			<footer>Copyright @ 2019</footer>
+
+		</body>
+	</html>
